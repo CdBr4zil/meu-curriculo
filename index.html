@@ -4,11 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.svg" type="xml/svg" />
+    <title>CD.DEV</title>
 </head>
 
 <body>
-    <p>Olá, mundo!</p>
+    <header>
+        <a class="logo" href="index.html" title="Voltar para o início">
+            <img class="img-mobile" src="img/logo.svg" alt="CD.DEV" />
+            <img class="img-desktop" src="img/logo.svg" alt="CD.DEV" />
+        </a>
+        <div class="navigation-menu">
+            <label for="menu">
+                <img src="img/menu.svg" alt="menu" />
+            </label>
+            <!--Esse input pode ser substituido depois por JS-->
+            <input id="menu" type="checkbox" hidden />
+            <nav>
+                <ul class="list-link">
+                    <li>
+                        <a href="#" title="Voltar para o início">Início</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Acessar Sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Acessar Habilidades">Habilidades</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Acessar Projetos">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Acessar Contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 </body>
 
 </html>
