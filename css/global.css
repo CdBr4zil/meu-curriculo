@@ -6,7 +6,7 @@
 }
 
 :root {
-  --primary-color: #5170FF;
+  --primary-color: #5170ff;
 
   --background-primary-color: #f1f1f1;
   --background-secondary-color: #d9d9d9;
@@ -29,4 +29,37 @@ body {
   font-family: "RobotoMono";
   background-color: var(--background-primary-color);
   height: 100vh;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: var(--title-weight);
+  color: var(--text-primary-color);
+}
+
+p {
+  font-size: 18px;
+  font-weight: var(--text-weight);
+  color: var(--text-primary-color);
+}
+
+.btn a {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  padding: 14px 32px;
+  background-color: var(--primary-color);
+  color: var(--background-primary-color);
+  text-decoration: none;
+  font-weight: var(--text-weight);
+  border-radius: 50px;
+  width: 100%;
+  max-width: 200px;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn a:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
 }
