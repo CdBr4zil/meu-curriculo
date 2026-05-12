@@ -1,0 +1,51 @@
+section.hero .content-hero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  gap: 48px;
+  padding: 48px;
+}
+
+.txt-hero span{
+    color: var(--primary-color);
+}
+
+.txt-hero p {
+  margin-top: 24px;
+}
+
+.img-hero {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    
+    100% {
+        top: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  section.hero .content-hero{
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    text-align: justify;
+    padding: 124px 88px;
+  }
+  .txt-hero {
+    align-self: center;
+  }
+  .img-hero {
+    width: 100%; 
+    display: flex;
+    justify-content: flex-end;
+  }
+}
