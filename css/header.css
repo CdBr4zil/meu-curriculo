@@ -82,7 +82,6 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-
   .navigation-menu {
     margin: auto 0;
   }
@@ -98,7 +97,7 @@ nav {
 
   .navigation-menu ul {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     gap: 48px;
     padding: 0;
