@@ -4,15 +4,10 @@ section.hero .content-hero {
   align-items: center;
   text-align: center;
   gap: 48px;
-  padding: 48px;
 }
 
 .txt-hero span {
   color: var(--primary-color);
-}
-
-.txt-hero p {
-  margin-top: 24px;
 }
 
 .btn-hero {
@@ -52,7 +47,6 @@ section.hero .content-hero {
     justify-content: space-between;
     align-items: flex-start;
     text-align: justify;
-    padding: 88px;
   }
 
   .txt-hero {
