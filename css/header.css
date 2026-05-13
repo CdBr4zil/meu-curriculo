@@ -109,11 +109,17 @@ nav {
 
   .navigation-menu a:hover {
     color: var(--primary-color);
+    transform: scale(1.1);
+  }
+
+  .list-link li a {
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
   }
 }
 
 @media screen and (min-width: 1440px) {
   header {
-    padding: 38px 128px;
+    padding: 38px 124px;
   }
 }
