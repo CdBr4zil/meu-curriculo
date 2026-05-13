@@ -9,6 +9,7 @@ header {
   align-content: flex-start;
   position: relative;
   padding: 38px 48px;
+  z-index: 1000;
 }
 
 .logo {
