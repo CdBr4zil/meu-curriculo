@@ -1,0 +1,38 @@
+.categoria-habilidades {
+  margin-bottom: 32px;
+}
+
+.categoria-habilidades h3 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 24px;
+}
+
+.lista-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.tag {
+  background-color: #ffffff;
+  color: var(--text-primary-color);
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+@media screen and (min-width: 1024px) {
+  .tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
