@@ -28,7 +28,6 @@
 body {
   font-family: "RobotoMono";
   background-color: var(--background-primary-color);
-  height: 100dvh;
 }
 
 section {
@@ -95,6 +94,7 @@ p {
   }
 
   section {
-    padding: 88px;
+    padding: 88px 88px 0px;
+    min-height: 100dvh;
   }
 }

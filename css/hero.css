@@ -1,3 +1,7 @@
+section.hero {
+  min-height: 70dvh;
+}
+
 section.hero .content-hero {
   display: flex;
   flex-direction: column-reverse;
@@ -45,8 +49,8 @@ section.hero .content-hero {
   section.hero .content-hero {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    text-align: justify;
+    align-items: center;
+    text-align: left;
   }
 
   .txt-hero {
