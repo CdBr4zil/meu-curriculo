@@ -62,11 +62,15 @@ section.project {
 }
 
 .project-card.crud {
-  background-image: url(../img/desktop-source-code-and-wallpaper-by-coding-and-programming-free-photo.jpg);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url(../img/desktop-source-code-and-wallpaper-by-coding-and-programming-free-photo.jpg);
 }
 
-.project-card.python {
-  background-image: url(../img/desktop-source-code-and-wallpaper-by-coding-and-programming-free-photo.jpg);
+.project-card.meu-curriculo {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url(../img/127.0.0.1_5500_index.html.png);
 }
 
 @media screen and (min-width: 768px) {
