@@ -9,8 +9,7 @@
   --primary-color: #5170ff;
 
   --background-primary-color: #f1f1f1;
-  --background-secondary-color: #d9d9d9;
-  --background-tertiary-color: #ffffff;
+  --background-secondary-color: #ffffff;
 
   --text-primary-color: #000000;
 
@@ -90,11 +89,11 @@ p {
   .btn a:hover {
     transform: scale(1.05);
     transition: all 0.2s ease-in-out;
-    box-shadow: 0px 0px 10px var(--primary-color); 
+    box-shadow: 0px 0px 10px var(--primary-color);
   }
 
   section {
-    padding: 88px 88px 0px;
+    padding: 88px;
     min-height: 100dvh;
   }
 }
