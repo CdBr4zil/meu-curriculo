@@ -2,7 +2,7 @@ header {
   margin: 0 auto;
 }
 header {
-  background-color: var(--background-tertiary-color);
+  background-color: var(--background-secondary-color);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -60,7 +60,7 @@ input[type="checkbox"]:checked ~ nav {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: var(--background-tertiary-color);
+  background-color: var(--background-secondary-color);
 }
 
 nav {
