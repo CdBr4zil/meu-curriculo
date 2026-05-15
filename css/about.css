@@ -87,15 +87,13 @@ section.about {
   margin-bottom: 8px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .about-cards {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-}
 
-@media screen and (min-width: 1024px) {
   .about-cards .card {
     max-width: 266px;
     min-height: 880px;
