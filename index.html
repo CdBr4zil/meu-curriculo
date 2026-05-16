@@ -4,34 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.svg" type="xml/svg" />
-    <title>CD.DEV</title>
+    <link rel="preload" href="font/RobotoMono-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/ability.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>Caio Dias | Desenvolvedor Full Stack | São Paulo, JavaScript, Java e Node.js</title>
+    <meta name="description"
+        content="Portfólio de Caio Dias, desenvolvedor full stack em São Paulo, com projetos web em JavaScript, Java, Node.js, SQL, HTML e CSS.">
+    <meta property="og:title" content="Caio Dias | Desenvolvedor Full Stack">
+    <meta property="og:description"
+        content="Conheça a trajetória, competências técnicas e projetos de desenvolvimento web de Caio Dias.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/foto-hero.png">
 </head>
 
 <body>
-    <header>
+    <!-- Icone Github -->
+    <svg aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;overflow:hidden">
+        <symbol id="icon-github" viewBox="0 0 16 16">
+            <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+        </symbol>
+    </svg>
+    <header class="site-header">
         <a class="logo" href="index.html" title="Voltar para o início">
-            <img class="img" src="img/logo.svg" alt="CD.DEV" />
+            <img src="img/logo.svg" alt="CD.DEV" />
         </a>
-        <div class="navigation-menu">
-            <label for="menu">
-                <img src="img/menu.svg" alt="menu" />
+        <div class="site-header__navigation-menu">
+            <label for="menu" aria-label="Abrir menu de navegação">
+                <img src="img/menu.svg" alt="Ícone do menu de navegação" />
             </label>
             <input id="menu" type="checkbox" hidden />
             <nav>
-                <ul class="list-link">
+                <ul class="site-header__list-link">
                     <li>
-                        <a href="#about" title="Acessar Sobre">Sobre</a>
+                        <a href="#about" title="Ir para seção de Sobre">Sobre</a>
                     </li>
                     <li>
-                        <a href="#ability" title="Acessar Habilidades">Habilidades</a>
+                        <a href="#ability" title="Ir para seção de Habilidades">Habilidades</a>
                     </li>
                     <li>
-                        <a href="#project" title="Acessar Projetos">Projetos</a>
+                        <a href="#projects" title="Ir para seção de Projetos">Projetos</a>
                     </li>
                     <li>
-                        <a href="#contato" title="Acessar Contato">Contato</a>
+                        <a href="#contato" title="Ir para seção de Contato">Contato</a>
                     </li>
                 </ul>
             </nav>
@@ -39,24 +60,24 @@
     </header>
     <main>
         <section class="hero">
-            <div class="content-hero">
-                <div class="txt-hero">
+            <div class="hero__content">
+                <div class="hero__text">
                     <h1>Prazer,
                         <br>Sou o <span>Caio!</span>
                     </h1>
                     <p>Desenvolvedor Full Stack apaixonado por construir soluções web do backend ao frontend. </p>
-                    <div class="btn-hero">
+                    <div class="hero__btn">
                         <div class="btn">
-                            <a href="#project" title="Acessar Projetos">Projetos</a>
+                            <a href="#projects" title="Ver projetos em destaque">Projetos</a>
                         </div>
-                        <div class="btn cv">
+                        <div class="btn">
                             <a href="pdf/CV -  Curriculo - Caio Dias.pdf" download="CV -  Curriculo - Caio Dias.pdf"
                                 title="Acessar Currículo">Baixar CV</a>
                         </div>
                     </div>
                 </div>
-                <div class="img-hero">
-                    <img src="img/foto-hero.svg" alt="Imagem do hero">
+                <div class="hero__img">
+                    <img src="img/foto-hero.svg" alt="Foto de Perfil 1:1" />
                 </div>
             </div>
         </section>
@@ -65,8 +86,8 @@
                 <h2>Sobre</h2>
                 <hr />
             </div>
-            <div class="about-cards">
-                <article class="card">
+            <div class="about__group-cards">
+                <article class="about__card">
                     <header>
                         <h3>Formação</h3>
                     </header>
@@ -84,7 +105,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="card">
+                <article class="about__card">
                     <header>
                         <h3>Experiência</h3>
                     </header>
@@ -110,7 +131,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="card">
+                <article class="about__card">
                     <header>
                         <h3>Cursos e Idiomas</h3>
                     </header>
@@ -147,9 +168,9 @@
                 <h2>Habilidades</h2>
                 <hr />
             </div>
-            <div class="categoria-habilidades">
+            <div class="skills__category">
                 <h3>Linguagens</h3>
-                <ul class="lista-tags">
+                <ul class="skills__tag-list">
                     <li class="tag">JavaScript</li>
                     <li class="tag">Python</li>
                     <li class="tag">Java</li>
@@ -158,25 +179,25 @@
                     <li class="tag">CSS3</li>
                 </ul>
             </div>
-            <div class="categoria-habilidades">
+            <div class="skills__category">
                 <h3>Frontend</h3>
-                <ul class="lista-tags">
+                <ul class="skills__tag-list">
                     <li class="tag">React</li>
                     <li class="tag">Mobile First</li>
                     <li class="tag">Search Engine Optimization (SEO)</li>
                 </ul>
             </div>
-            <div class="categoria-habilidades">
+            <div class="skills__category">
                 <h3>Backend</h3>
-                <ul class="lista-tags">
+                <ul class="skills__tag-list">
                     <li class="tag">Node.js</li>
                     <li class="tag">Express.js</li>
                     <li class="tag">VBA</li>
                 </ul>
             </div>
-            <div class="categoria-habilidades">
+            <div class="skills__category">
                 <h3>Ferramentas e Versionamento</h3>
-                <ul class="lista-tags">
+                <ul class="skills__tag-list">
                     <li class="tag">Git</li>
                     <li class="tag">GitHub</li>
                     <li class="tag">VS Code</li>
@@ -185,59 +206,59 @@
                     <li class="tag">Excel</li>
                 </ul>
             </div>
-            <div class="categoria-habilidades">
+            <div class="skills__category">
                 <h3>Metodologias</h3>
-                <ul class="lista-tags">
+                <ul class="skills__tag-list">
                     <li class="tag">Kanban</li>
                     <li class="tag">Design Thinking</li>
                     <li class="tag">Programação Orientada a Objetos (POO)</li>
                 </ul>
             </div>
         </section>
-        <section class="project" id="project">
+        <section class="projects" id="projects">
             <div class="title-section">
                 <h2>Projetos</h2>
                 <hr />
             </div>
-            <div class="project-container">
-                <article class="project-card jornada">
+            <div class="project__container">
+                <article class="project__card jornada">
                     <div class="card-content">
                         <h3>
                             Jornada Viagens
                         </h3>
-                        <a href="https://github.com/CdBr4zil/jornada-viagens#" target="_blank" class="btn-card">GitHub
+                        <a href="https://github.com/CdBr4zil/jornada-viagens#" target="_blank" rel="noopener noreferrer"
+                            class="project__btn-link">GitHub
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                class="bi bi-github" aria-hidden="true">
+                                <use href="#icon-github"></use>
                             </svg>
                         </a>
                     </div>
                 </article>
-                <article class="project-card crud">
+                <article class="project__card crud">
                     <div class="card-content">
                         <h3>
                             Sistema CRUD
                         </h3>
-                        <a href="https://github.com/CdBr4zil/CRUD-JS" target="_blank" class="btn-card">GitHub
+                        <a href="https://github.com/CdBr4zil/CRUD-JS" target="_blank" rel="noopener noreferrer"
+                            class="project__btn-link">GitHub
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                class="bi bi-github" aria-hidden="true">
+                                <use href="#icon-github"></use>
                             </svg>
                         </a>
                     </div>
                 </article>
-                <article class="project-card meu-curriculo">
+                <article class="project__card meu-curriculo">
                     <div class="card-content">
                         <h3>
                             Meu Currículo
                         </h3>
-                        <a href="https://github.com/CdBr4zil/meu-curriculo" target="_blank" class="btn-card">GitHub
+                        <a href="https://github.com/CdBr4zil/meu-curriculo" target="_blank" rel="noopener noreferrer"
+                            class="project__btn-link">GitHub
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                class="bi bi-github" aria-hidden="true">
+                                <use href="#icon-github"></use>
                             </svg>
                         </a>
                     </div>
@@ -265,9 +286,8 @@
 
                 <a href="https://github.com/CdBr4zil" target="_blank" title="GitHub" class="social-link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-github" viewBox="0 0 16 16">
-                        <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                        class="bi bi-github" aria-hidden="true">
+                        <use href="#icon-github"></use>
                     </svg>
                 </a>
             </div>

@@ -28,6 +28,7 @@
 body {
   font-family: "RobotoMono";
   background-color: var(--background-primary-color);
+  line-height: 1.5;
 }
 
 section {
@@ -89,7 +90,7 @@ p {
 @media screen and (min-width: 1024px) {
   .btn a:hover {
     transform: scale(1.05);
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, box-shadow;
     box-shadow: 0px 0px 10px var(--primary-color);
   }
 

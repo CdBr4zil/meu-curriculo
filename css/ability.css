@@ -1,14 +1,14 @@
-.categoria-habilidades {
+.skills__category {
   margin-bottom: 32px;
 }
 
-.categoria-habilidades h3 {
+.skills__category h3 {
   font-size: 24px;
   color: var(--primary-color);
   margin-bottom: 24px;
 }
 
-.lista-tags {
+.skills__tag-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,7 +17,7 @@
   padding: 0;
 }
 
-.tag {
+.skills__tag-list .tag {
   background-color: #ffffff;
   color: var(--text-primary-color);
   padding: 8px 16px;
@@ -31,7 +31,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .tag:hover {
+  .skills__tag-list .tag:hover {
     transform: translateY(-2px);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }

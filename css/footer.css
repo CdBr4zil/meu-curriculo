@@ -8,14 +8,14 @@
   box-sizing: border-box;
 }
 
+.main-footer .footer-content {
+  text-align: center;
+}
+
 .main-footer .footer-content img {
   height: 40px;
   width: 162px;
   margin-bottom: 16px;
-}
-
-.main-footer .footer-content {
-  text-align: center;
 }
 
 .main-footer p {
@@ -64,14 +64,11 @@
 
   .main-footer .social-media {
     margin-top: 32px;
+    width: 215px;
   }
 
   .main-footer .footer-content {
     text-align: left;
-  }
-
-  .main-footer .social-media {
-    width: 215px;
   }
 
   .main-footer.social-media p {
@@ -80,5 +77,5 @@
 
   .social-link:hover {
     transform: translateY(-4px);
-}
+  }
 }

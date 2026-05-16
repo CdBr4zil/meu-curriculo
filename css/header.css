@@ -1,7 +1,5 @@
-header {
+.site-header {
   margin: 0 auto;
-}
-header {
   background-color: var(--background-secondary-color);
   display: flex;
   flex-direction: row;
@@ -14,40 +12,32 @@ header {
 
 .logo {
   display: inline;
-  width: 80px;
-  height: 80px;
+  height: 72px;
+  width: 72px;
 }
 
-.img-mobile {
-  display: block;
-}
-
-.img-desktop {
-  display: none;
-}
-
-.navigation-menu {
+.site-header__navigation-menu {
   margin-top: 24px;
 }
 
-.navigation-menu img {
+.site-header__navigation-menu img {
   width: 30px;
   height: 30px;
 }
 
-.list-link {
+.site-header__list-link {
   list-style: none;
 }
 
-.list-link li {
+.site-header__list-link li {
   margin: 16px 48px;
 }
 
-.list-link .active {
+.site-header__list-link .active {
   text-decoration: underline;
 }
 
-.list-link li a {
+.site-header__list-link a {
   color: var(--text-primary-color);
   text-decoration: none;
   font-weight: var(--menu-text-weight);
@@ -68,35 +58,35 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  header {
+  .site-header {
     padding: 38px 64px;
   }
 
-  .navigation-menu img {
+  .site-header__navigation-menu img {
     width: 35px;
     height: 35px;
   }
 
-  .list-link li {
+  .site-header__list-link li {
     margin: 16px 64px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .navigation-menu {
+  .site-header__navigation-menu {
     margin: auto 0;
   }
 
-  .navigation-menu label {
+  .site-header__navigation-menu label {
     display: none;
   }
 
-  .navigation-menu nav {
+  .site-header__navigation-menu nav {
     display: block;
     position: static;
   }
 
-  .navigation-menu ul {
+  .site-header__navigation-menu ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -104,18 +94,20 @@ nav {
     padding: 0;
   }
 
-  .navigation-menu li {
+  .site-header__navigation-menu li {
     margin: 0;
   }
 
-  .navigation-menu a:hover {
+  .site-header__navigation-menu a:hover {
     color: var(--primary-color);
     transform: scale(1.1);
   }
 
-  .list-link li a {
+  .site-header__list-link a {
     display: inline-block;
-    transition: all 0.2s ease-in-out;
+    transition:
+      color 0.2s ease-in-out,
+      transform 0.2s ease-in-out;
   }
 }
 

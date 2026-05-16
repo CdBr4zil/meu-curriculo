@@ -2,7 +2,7 @@ section.hero {
   min-height: 85dvh;
 }
 
-section.hero .content-hero {
+section.hero .hero__content {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -10,11 +10,11 @@ section.hero .content-hero {
   gap: 48px;
 }
 
-.txt-hero span {
+.hero__text span {
   color: var(--primary-color);
 }
 
-.btn-hero {
+.hero__btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +22,7 @@ section.hero .content-hero {
   gap: 24px;
 }
 
-.img-hero {
+.hero__img {
   width: 100%;
   max-width: 350px;
   position: relative;
@@ -40,30 +40,30 @@ section.hero .content-hero {
 }
 
 @media screen and (min-width: 768px) {
-  .btn-hero {
+  .hero__btn {
     flex-direction: row;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  section.hero .content-hero {
+  section.hero .hero__content {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     text-align: left;
   }
 
-  .txt-hero {
+  .hero__text {
     align-self: center;
   }
 
-  .img-hero {
+  .hero__img {
     width: 100%;
     display: flex;
     justify-content: flex-end;
   }
 
-  .btn-hero {
+  .hero__btn {
     justify-content: flex-start;
   }
 }
