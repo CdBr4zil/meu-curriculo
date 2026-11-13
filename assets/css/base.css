@@ -1,0 +1,170 @@
+@font-face {
+  font-family: Geist;
+  src: url("../fonts/geist-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+}
+
+:root {
+  --font-body: Geist, system-ui, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, monospace;
+  --container: 72rem;
+  --gutter: clamp(1.125rem, 4.5vw, 3.5rem);
+  --section-space: clamp(3.5rem, 7vw, 6.5rem);
+  --radius: 1.25rem;
+  --gap: 1.125rem;
+  --transition: 160ms ease;
+
+  --light-page: #f7f8fc;
+  --light-surface: #fff;
+  --light-text: #151a2d;
+  --light-muted: #4b566f;
+  --light-accent: #304bc9;
+  --light-button: #304bc9;
+  --light-on-button: #fff;
+  --light-hover: #2539a5;
+  --light-line: #d9deec;
+  --light-control-line: #818ca8;
+  --light-soft: #e9edfc;
+  --light-feature: #e3e9ff;
+  --light-grid: #bcc8fa;
+  --light-focus: #2845ce;
+
+  --dark-page: #12141b;
+  --dark-surface: #1b1f29;
+  --dark-text: #f5f6ff;
+  --dark-muted: #b5bdd4;
+  --dark-accent: #a8b6ff;
+  --dark-button: #b3c1ff;
+  --dark-on-button: #101936;
+  --dark-hover: #ced6ff;
+  --dark-line: #343d52;
+  --dark-control-line: #7482a3;
+  --dark-soft: #242d48;
+  --dark-feature: #202945;
+  --dark-grid: #455683;
+  --dark-focus: #becaff;
+
+  color-scheme: light;
+  --page: var(--light-page);
+  --surface: var(--light-surface);
+  --text: var(--light-text);
+  --muted: var(--light-muted);
+  --accent: var(--light-accent);
+  --button: var(--light-button);
+  --on-button: var(--light-on-button);
+  --button-hover: var(--light-hover);
+  --line: var(--light-line);
+  --control-line: var(--light-control-line);
+  --soft: var(--light-soft);
+  --feature: var(--light-feature);
+  --grid-line: var(--light-grid);
+  --focus: var(--light-focus);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: var(--dark-page);
+  --surface: var(--dark-surface);
+  --text: var(--dark-text);
+  --muted: var(--dark-muted);
+  --accent: var(--dark-accent);
+  --button: var(--dark-button);
+  --on-button: var(--dark-on-button);
+  --button-hover: var(--dark-hover);
+  --line: var(--dark-line);
+  --control-line: var(--dark-control-line);
+  --soft: var(--dark-soft);
+  --feature: var(--dark-feature);
+  --grid-line: var(--dark-grid);
+  --focus: var(--dark-focus);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --page: var(--dark-page);
+    --surface: var(--dark-surface);
+    --text: var(--dark-text);
+    --muted: var(--dark-muted);
+    --accent: var(--dark-accent);
+    --button: var(--dark-button);
+    --on-button: var(--dark-on-button);
+    --button-hover: var(--dark-hover);
+    --line: var(--dark-line);
+    --control-line: var(--dark-control-line);
+    --soft: var(--dark-soft);
+    --feature: var(--dark-feature);
+    --grid-line: var(--dark-grid);
+    --focus: var(--dark-focus);
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-block-start: 1.25rem;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  font: 1rem/1.6 var(--font-body);
+}
+
+h1, h2, h3, p, ul, ol, dl, dd, figure, pre {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: clamp(2rem, 4.4vw, 3.25rem);
+  font-weight: 680;
+  letter-spacing: -0.065em;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.25em;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 4px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
